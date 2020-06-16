@@ -1,0 +1,36 @@
+git的操作与使用
+    (0)git工作原理概述:
+        工作区(本地磁盘中) => 暂存区 => 远程仓库
+    (1)使用cd进入你的“仓库”
+    (2)配置git基本操作
+        $ git config --global user.name "这里写你的用户名，即github上的用户名"
+        $ git config --global user.email "这里写你的邮箱，即github上的注册邮箱"
+    (3)使用$ git init命令初始化一个.git文件
+        这个操作会在本地创建一个.git文件，这个文件里存储的是该版本的所有信息
+    (4)注意：reademe文件的后缀是.md
+    (5)工作区到暂存区的命令
+        (一)提交文件
+            方式一：$ git add 文件名
+            方式二：$ git add * //如果这样操作就表示你提交所有文件
+        (二)提交说明:此步操作紧接上一步，是对你上一步提交文件的说明
+            $ git commit -m "这里写你的提交描述"
+    (6)查看当前工作区的状态:$ git status
+        此操作会显示你的工作区和暂存区是否有差异    
+    (7)查看工作区和暂存区版本区别：$ git diff
+        此操作会显示你的工作区和暂存区的具体区别
+    (8)使用clear命令对git清屏
+    (9)使用$ git log查看已经提交到暂存区的历史版本
+    (10)使用$ git reset --hard HEAD^退回到上个版本
+        同理用 $ git reset --hard HEAD^^退回到上上个版本
+        还可以用$ git reset --hard 版本号退回到你想要的版本
+        //以上操作都是将版本恢复至工作区中
+    (11)生成ssh密钥：$ ssh-keygen -t rsa -C "写github的邮箱"
+        windows密钥文件所在：此电脑/用户名/用户名文件夹/.ssh
+    (12)暂存区 => 远程仓库
+        如果是第一次提交：
+            $ git remote add origin 这里写你的仓库地址 
+            $ git push -u origin master//只有第一次提交才需要这么写
+        以后提交可以直接使用：$ git push
+    (13)使用$ git clone 这里写你的仓库地址
+        可以拷贝该仓库的内容到你的本机
+    (14)使用$ git pull更新你的本地仓库
