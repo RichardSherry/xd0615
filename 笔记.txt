@@ -29,7 +29,7 @@ git的操作与使用
     (12)暂存区 => 远程仓库
         如果是第一次提交：
             $ git remote add origin 这里写你的仓库地址 
-            $ git push -u origin master
+            $ git push -u origin master//只有第一次提交才需要这么写
         以后提交可以直接使用：$ git push
     (13)使用$ git clone 这里写你的仓库地址
         可以拷贝该仓库的内容到你的本机
