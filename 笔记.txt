@@ -31,4 +31,6 @@ git的操作与使用
             $ git remote add origin 这里写你的仓库地址 
             $ git push -u origin master
         以后提交可以直接使用：$ git push
-    
+    (13)使用$ git clone 这里写你的仓库地址
+        可以拷贝该仓库的内容到你的本机
+    (14)使用$ git pull更新你的本地仓库
