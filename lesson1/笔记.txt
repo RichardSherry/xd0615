@@ -34,3 +34,8 @@ git的操作与使用
     (13)使用$ git clone 这里写你的仓库地址
         可以拷贝该仓库的内容到你的本机
     (14)使用$ git pull更新你的本地仓库
+    (16)删除github中文件的方法：
+        依次输入如下命令：
+        git rm --cached filename
+        git commit -m ""
+        git push
